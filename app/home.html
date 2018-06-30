@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Currency Converter</title>
+	
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+
+	<link rel="stylesheet" type="text/css" href="css/currency.css">
+	<scipt src="script/currency.js"></scipt>
+
+</head>
+<body>
+	
+	<div class="container">
+ 	<div class="row">
+ 		<div class="col-lg-12">
+ 			<div class="content header">
+ 				<h1 class="header">Currency Calculator</h1>
+ 				<form class= "form">
+ 					<p>Amount:<input type="number" name="input" placeholder="Enter Amount" id ="amount"/></p>
+ 					<p>From:<select class = "currencyChange" id ="currencyFrm">	
+ 					</select>
+ 					To:<select class = "currencyChange" id ="currencyTo">	
+ 					</select></p>
+ 					<input type="button" id="convert" value="Convert"/>
+ 					<input type="textbox" id="output"/>
+ 				</form>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ <script src="idb.js"></script>
+ <script src="script/calc.js"></script>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+ <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ <script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('sw.js')
+           .then(function(registration) { 
+           	console.log("Service Worker Registered"); 
+           })
+           .catch(function(error) {
+           	console.log('Service worker registration failed, error:', error);
+           });
+		}
+</script>
+</body>
+</html>
